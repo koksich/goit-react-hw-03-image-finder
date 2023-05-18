@@ -1,5 +1,8 @@
 import { Component } from "react"
 import { createPortal } from "react-dom";
+
+import PropTypes from 'prop-types';
+
 import { Overlay, Img } from "./Modal.styled";
 
 
@@ -37,4 +40,8 @@ export class Modal extends Component {
           );
     }
   
+}
+
+Modal.propTypes = {
+    onClose: PropTypes.func,
 }

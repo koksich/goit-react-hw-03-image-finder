@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { ButtonContainer, Btn } from "./Button.styled"
 
 export const Button = ({onLoadMore}) => {
@@ -8,4 +10,8 @@ export const Button = ({onLoadMore}) => {
         </Btn>
       </ButtonContainer>
     );
+}
+
+Button.propTypes = {
+  onLoadMore: PropTypes.func,
 }
