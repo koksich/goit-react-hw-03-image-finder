@@ -1,7 +1,10 @@
 import { Oval } from "react-loader-spinner";
 
+import { Wrapper } from "./Loader.styled";
+
 export const Loader = () => {
-    return (
+  return (
+    <Wrapper>
       <Oval
         height={80}
         width={80}
@@ -14,5 +17,6 @@ export const Loader = () => {
         strokeWidth={2}
         strokeWidthSecondary={2}
       />
-    );
+    </Wrapper>
+  );
 }
